@@ -8,3 +8,4 @@ JC125/M87/vertical-camera/raw/Test48_13331848_13083861097673.raw filter=lfs diff
 JC125/M87/vertical-camera/raw/Test48_13331848_13083861476673.raw filter=lfs diff=lfs merge=lfs -text
 *.xtf filter=lfs diff=lfs merge=lfs -text
 *.all filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
