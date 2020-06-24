@@ -5,7 +5,7 @@ It accompanies the dataset and the report "AURORA, A multi sensor dataset for ro
 
 Please refer to [https://github.com/noc-mars/ocean-data](https://github.com/noc-mars/ocean-data) for further information.
 
-The dataset sample provided in this repository includes a subset of the data collected during cruise James Cook 125 (JC125) using the Autonomous Underwater Vehicle Autosub 6000.
+The dataset sample provided in this repository includes a subset of the data collected during cruise James Cook 125 (JC125) of the [National Oceanography Centre](noc.ac.uk), using the Autonomous Underwater Vehicle Autosub 6000.
 It is composed of two AUV missions: M86 and M86. 
 
 - M86 contains a sample of multi-beam echosounder data in `.all` format. It also contains CTD and navigation data in `csv` format. 
