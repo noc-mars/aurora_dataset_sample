@@ -18,5 +18,6 @@ The entire AUV navigation file is provided as part of this subset in `.csv` form
 The samples is chosen to provide some representative examples of the type and quality of all the data collected.
 
 ### Dependencies
-Some of the files in this repository are relatively big.
-Please install `lfs` running: `git lsf install` to pull them.
+Some of the files in this repository are relatively large and we use the open source Git extension for versioning large files.
+
+Please install [`lfs`](https://git-lfs.github.com/) running `git lsf install` before pulling the repository.
