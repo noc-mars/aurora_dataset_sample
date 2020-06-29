@@ -14,3 +14,9 @@ It is composed of two AUV missions: M86 and M86.
 The camera data are provided in `.raw` format (pixels are ordered in Bayer format). The size of each image is of size 2448x2048. 
 The side-scan sonar folder contains a one ping sample of side-scan data provided in .xtf format. 
 The entire AUV navigation file is provided as part of this subset in `.csv` form.
+
+The samples is chosen to provide some representative examples of the type and quality of all the data collected.
+
+### Dependencies
+Some of the files in this repository are relatively big.
+Please install `lfs` running: `git lsf install` to pull them.
