@@ -3,7 +3,7 @@
 This repository contains a subset of the AURORA dataset, a multi sensor dataset for robotic ocean exploration.
 It accompanies the dataset and the report "AURORA, A multi sensor dataset for robotic ocean exploration", by Marco Bernardi, Brett Hosking, Chiara Petrioli, Brian J. Bett, Daniel Jones, Veerle Huvenne, Rachel Marlow, Maaten Furlong, Steve McPhail and Andrea Munafo.
 
-Please refer to [https://github.com/noc-mars/ocean-data](https://github.com/noc-mars/ocean-data) for further information.
+Please refer to [https://github.com/noc-mars/aurora](https://github.com/noc-mars/aurora) for further information.
 
 The dataset sample provided in this repository includes a subset of the data collected during cruise James Cook 125 (JC125) of the [National Oceanography Centre](noc.ac.uk), using the Autonomous Underwater Vehicle Autosub 6000.
 It is composed of two AUV missions: M86 and M86. 
