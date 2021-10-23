@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<robot name="autosub">
+
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 0.5"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 1.57 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="4.443" radius="0.46"/>
+      </geometry>
+	<material name="white"/>
+    </visual>
+  </link>
+
+
+   <link name="adcp">
+      <visual>
+        <geometry>
+           <cylinder length="0.3" radius="0.15"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_adcp" type="fixed">
+        <parent link="base_link"/>
+        <child link="adcp"/>
+        <origin rpy="0 0 0" xyz="-0.795 0 -0.387"/>
+    </joint>
+
+    <link name="phins">
+      <visual>
+        <geometry>
+           <cylinder length="0.3" radius="0.15"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_phins" type="fixed">
+        <parent link="base_link"/>
+        <child link="phins"/>
+        <origin rpy="0 0 0" xyz="-0.795 0 -0.387"/>
+    </joint>
+
+
+
+    <link name="em2040_tx">
+      <visual>
+        <geometry>
+           <cylinder length="0.2" radius="0.10"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_em2040_tx" type="fixed">
+        <parent link="base_link"/>
+        <child link="em2040_tx"/>
+        <origin rpy="0 0 0" xyz="1.874 0 -0.421"/>
+    </joint>
+
+    <link name="em2040_rx">
+      <visual>
+        <geometry>
+           <cylinder length="0.2" radius="0.10"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_em2040_rx" type="fixed">
+        <parent link="base_link"/>
+        <child link="em2040_rx"/>
+        <origin rpy="0 0 0" xyz="1.404 0 -0.421"/>
+    </joint>
+
+    <link name="camera">
+      <visual>
+        <geometry>
+           <cylinder length="0.2" radius="0.10"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_camera" type="fixed">
+        <parent link="base_link"/>
+        <child link="camera"/>
+        <origin rpy="3.14 0 0" xyz="2.036 0.230 -0.3"/>
+    </joint>
+
+    <link name="sidescan_rx">
+      <visual>
+        <geometry>
+           <box size="0.06 0.5 0.03"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_sidescan_rx" type="fixed">
+        <parent link="base_link"/>
+        <child link="sidescan_rx"/>
+        <origin rpy="3.14 0 1.57" xyz="-0.34 0.430 -0.156"/>
+    </joint>
+
+    <link name="sidescan_lx">
+      <visual>
+        <geometry>
+           <box size="0.06 0.5 0.03"/>
+         </geometry>
+         <origin rpy="0 0 0" xyz="0 0 0"/>
+	 <material name="blue"/>
+       </visual>
+    </link>
+
+    <joint name="hull_to_sidescan_lx" type="fixed">
+        <parent link="base_link"/>
+        <child link="sidescan_lx"/>
+        <origin rpy="0 3.14 1.57" xyz="-0.34 -0.430 -0.156"/>
+    </joint>
+
+
+</robot>
